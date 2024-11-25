@@ -135,7 +135,7 @@ nav>div>img:hover{
     padding-top: -5rem;
 }
 
-#datos-informacion{
+#acerca-de-nosotros{
     display: grid;
     grid-template-columns: repeat(1, 2fr);
     grid-gap: 8rem;
@@ -144,33 +144,33 @@ nav>div>img:hover{
     
 }
 
-#datos-informacion>.datos{
+#acerca-de-nosotros>.datos{
     display: flex;
     position: relative;
     flex-direction: column;
     text-align: center;
 }
 
-#datos-informacion>.datos>img{
+#acerca-de-nosotros>.datos>img{
     width: 2.5rem;
     position: absolute;
     bottom: 8rem;
     left: 6.5vw ;
 }
 
-#datos-informacion>.datos>.numeros{
+#acerca-de-nosotros>.datos>.numeros{
     font-size: 70px;
     font-weight: 700;
 
 }
 
-#datos-informacion>.datos>.texto{
+#acerca-de-nosotros>.datos>.texto{
     font-size: 20px;
     padding-top: 1rem;
     color: darkgray;
 }
 
-#informacion-secundaria{
+#servicios{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -179,7 +179,7 @@ nav>div>img:hover{
     
 }
 
-#informacion-secundaria>article{
+#servicios>article{
     background-color: var(--Very-Pale-Blue);
     padding-top: 3rem;
     display: flex;
@@ -188,27 +188,27 @@ nav>div>img:hover{
     text-align: center;
 }
 
-#informacion-secundaria>article>div>img{
+#servicios>article>div>img{
     width: 86vw;
 }
 
-#informacion-secundaria>img{
+#servicios>img{
     width: 86vw;
 }
 
-#informacion-secundaria>article>h2{
+#servicios>article>h2{
     padding-top: 3rem;
     padding-bottom: 1rem;
 }
 
-#informacion-secundaria>article>p{
+#servicios>article>p{
     
     width: 18rem;
     padding-bottom: 3rem;
       
 }
 
-#informacion-terciaria{
+#atencion-al-cliente{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -216,16 +216,16 @@ nav>div>img:hover{
     text-align: center;
 }
 
-#informacion-terciaria>div>img{
+#atencion-al-cliente>div>img{
     width: 12.1rem;
 }
 
-#informacion-terciaria>h2{
+#atencion-al-cliente>h2{
     padding-top: 3rem;
     padding-bottom: 1rem;
 }
 
-#informacion-terciaria>p {
+#atencion-al-cliente>p {
     width: 18rem;
     padding-bottom: 3rem;
     
@@ -348,14 +348,14 @@ footer{
         padding: 1rem 6rem;
     }
 
-    #datos-informacion{
+    #acerca-de-nosotros{
         display: flex;
         justify-content: space-around;
         padding: 10rem 4rem;
         
     }
 
-    #datos-informacion>.datos>img{
+    #acerca-de-nosotros>.datos>img{
         width: 3rem;
         left: 1vw ;
     }
