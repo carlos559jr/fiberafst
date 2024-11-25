@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+:root{
+    --Pink:#f1a600;;
+    --Light-Pink:#f1a600;;
+    --Light-Red: hsl(0, 100%, 63%);
+    --Very-Dark-Cyan: black;
+    --Very-Pale-Blue: hsl(207, 100%, 98%);
+    --sub-color: #242635;
+    --color-body: #1f1d2c;
+    --color-text: white;
+    --tipo-fuente: 'Inter', sans-serif;
+    --padding : 0.5rem 1.5rem;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--tipo-fuente);
+}
+
+body{
+    background-color: var(--Very-Dark-Cyan);
+    color: var(--color-text);
+    background-size: auto;
+
+}
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding); 
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: #fff;
+}
+
+input#menu{
+    visibility: hidden;
+    position: relative;
+}
+
+input#menu~ul{
+    background-color: var(--sub-color);
+    width: 100%;
+    list-style: none;
+    height: 58%;
+    position: absolute;
+    right: 100%;
+    transition: all 300ms linear;
+    opacity: 0.8;
+}
+
+input#menu:checked~ul{
+    right: 0;
+}
+
+
+nav>div>div{
+    position: absolute;
+    top: -0.1%;
+    right: 0.1vw;
+    z-index: -1;
+    
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: var(--padding);
+}
+
+nav>div>ul>.home>a{
+    color: #f1a600;
+}
+
+nav>div>a>img{
+    position: relative;
+    width: 12rem;
+}
+
+nav>div>img:hover{
+    cursor: pointer;
+}
+
+
+#inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.5rem 2rem;
+    text-align: center;
+    background-image: url("../assets/images/imagen-inicio.jpeg");
+}
+
+#inicio>div>h1{
+    width: 94vw;
+    padding: 9rem 2rem;
+    font-size: 10rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#inicio>p{
+    width: 18rem;
+    padding-bottom: 3rem ;
+}
+
+#inicio>.boton{
+    padding: 1rem 3rem;
+    border: 2px solid var(--Pink);
+    background-color: var(--Pink);
+    color: white;
+    border-radius: 50px;
+}
+
+#inicio>.boton:hover{
+    cursor: pointer;
+}
+
+
+#inicio>div>img{
+    width: 70vw;
+}
+
+#img-inicio{
+    padding-top: -5rem;
+}
+
+#datos-informacion{
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    grid-gap: 8rem;
+    padding: 4rem;
+    
+    
+}
+
+#datos-informacion>.datos{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+}
+
+#datos-informacion>.datos>img{
+    width: 2.5rem;
+    position: absolute;
+    bottom: 8rem;
+    left: 6.5vw ;
+}
+
+#datos-informacion>.datos>.numeros{
+    font-size: 70px;
+    font-weight: 700;
+
+}
+
+#datos-informacion>.datos>.texto{
+    font-size: 20px;
+    padding-top: 1rem;
+    color: darkgray;
+}
+
+#informacion-secundaria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 2rem;
+    text-align: center;
+    
+}
+
+#informacion-secundaria>article{
+    background-color: var(--Very-Pale-Blue);
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#informacion-secundaria>article>div>img{
+    width: 86vw;
+}
+
+#informacion-secundaria>img{
+    width: 86vw;
+}
+
+#informacion-secundaria>article>h2{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+#informacion-secundaria>article>p{
+    
+    width: 18rem;
+    padding-bottom: 3rem;
+      
+}
+
+#informacion-terciaria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+#informacion-terciaria>div>img{
+    width: 12.1rem;
+}
+
+#informacion-terciaria>h2{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+#informacion-terciaria>p {
+    width: 18rem;
+    padding-bottom: 3rem;
+    
+}
+
+
+.bote{
+    padding: 1rem 3rem;
+    border: 2px solid var(--Pink);
+    background-color: var(--Pink);
+    color: white;
+    border-radius: 50px;
+}
+.bote:hover{
+    cursor: pointer;
+}
+
+footer{
+    border-radius: 2%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    height:100%;
+    width: 100%;
+   
+    }
+     .futer img{
+         margin-left:auto;
+         width:120px ;
+         height: 40px;
+         margin-top: 15px;
+         color: black;
+     }
+     .futer p{
+         
+         padding: auto;
+         color: black;
+         
+         margin-bottom: 70px;
+         margin-top: 15px;
+     }
+      .futer a{
+          
+          padding: 20px;
+          color: black;
+            
+      }
+
+ .futer-2  {
+     
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 30px;
+ }
+ .bot{
+     
+     padding:6px;
+ }
+  .boton{
+      background-color: var(--Light-Pink);
+      padding:6px;
+      margin-left: 3px;
+  }
+
+  .whatsapp-button {
+    position: fixed;
+    bottom: 80px;
+    right: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: background-color 0.3s, opacity 0.3s;
+    opacity: 0.7;
+}
+
+.whatsapp-button:hover {
+    background-color: #25d366;
+    opacity: 1;
+}
+
+@media only screen and (min-width:769px){
+
+    nav>div>label{
+        display: none;
+    }
+
+    input#menu~ul{
+        position: static;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    input#menu~ul>li{
+        padding: 0.5rem;
+    }
+
+    #informacion-principal>h1{
+        width: 94vw;
+        padding: 2rem 2rem;
+        font-size: 35px;
+        
+    }
+    
+    #informacion-principal>p{
+        width: 32rem;
+        font-size: 18px;
+    }
+
+    #informacion-principal>.boton{
+        padding: 1rem 6rem;
+    }
+
+    #datos-informacion{
+        display: flex;
+        justify-content: space-around;
+        padding: 10rem 4rem;
+        
+    }
+
+    #datos-informacion>.datos>img{
+        width: 3rem;
+        left: 1vw ;
+    }
+
+    
+    .futer p{
+        flex-direction: column;
+    }
+    .futer a{
+        flex-direction: column;
+    }
+    .futer-2{
+    display: inline-block;
+    }
+}
