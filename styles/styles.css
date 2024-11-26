@@ -12,6 +12,7 @@
     --color-text: white;
     --tipo-fuente: 'Inter', sans-serif;
     --padding : 0.5rem 1.5rem;
+    --nuevo-color: #505083;
 }
 
 *{
@@ -25,20 +26,25 @@ body{
     background-color: var(--Very-Dark-Cyan);
     color: var(--color-text);
     background-size: auto;
+    margin: 0 1vw 1vw 1vw;
 
 }
 
 
 nav{
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: var(--padding); 
+    background-color: black;
+    width: 100vw;
+    border-radius: 2%;
 }
 
 a:link, a:visited, a:active {
     text-decoration:none;
-    color: #fff;
+    color: var(--Light-Pink);
 }
 
 input#menu{
@@ -76,11 +82,9 @@ ul{
     justify-content: space-evenly;
     align-items: center;
     padding: var(--padding);
+    color: var(--Light-Pink);
 }
 
-nav>div>ul>.home>a{
-    color: #f1a600;
-}
 
 nav>div>a>img{
     position: relative;
@@ -99,6 +103,7 @@ nav>div>img:hover{
     padding: 3.5rem 2rem;
     text-align: center;
     background-image: url("../assets/images/imagen-inicio.jpeg");
+    border-radius: 2%;
 }
 
 #inicio>div>h1{
@@ -106,6 +111,7 @@ nav>div>img:hover{
     padding: 9rem 2rem;
     font-size: 10rem;
     font-family: 'Poppins', sans-serif;
+    color: var(--Light-Pink);
 }
 
 
@@ -137,76 +143,64 @@ nav>div>img:hover{
 
 #acerca-de-nosotros{
     display: grid;
-    grid-template-columns: repeat(1, 2fr);
-    grid-gap: 8rem;
-    padding: 4rem;
-    
-    
+    grid-template-columns: repeat(1, 3fr);
+    grid-gap: 5rem;
+    color: black; 
+    background-color: white; 
+    border-radius: 2%;
+    margin-top: 0.5vw;
+    justify-content: center;
+    align-content: center;
 }
 
 #acerca-de-nosotros>.datos{
     display: flex;
-    position: relative;
     flex-direction: column;
     text-align: center;
-}
-
-#acerca-de-nosotros>.datos>img{
-    width: 2.5rem;
-    position: absolute;
-    bottom: 8rem;
-    left: 6.5vw ;
+    font-weight: 700;
+    font-size: 2rem; 
 }
 
 #acerca-de-nosotros>.datos>.numeros{
-    font-size: 70px;
-    font-weight: 700;
-
-}
-
-#acerca-de-nosotros>.datos>.texto{
     font-size: 20px;
-    padding-top: 1rem;
-    color: darkgray;
+    padding-top: 2rem;
+    margin: 0 2vw;
 }
 
 #servicios{
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    grid-gap: 5rem;
+    color: white; 
+    background-color: black; 
+    border-radius: 2%;
+    margin-top: 0.5vw;
+    justify-content: center;
+    align-content: center;
+}
+
+#servicios>.datos{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5rem 2rem;
     text-align: center;
-    
+    font-weight: 700;
+    font-size: 2rem; 
+    background-color: white;
+    color: black;
+    border-radius: 10%;
+    padding: 4vw;
+    border-color: var(--Light-Pink);
+    border-width: 0.5vw;
+    border-style: groove;
 }
 
-#servicios>article{
-    background-color: var(--Very-Pale-Blue);
-    padding-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+#servicios>.datos>.numeros{
+    font-size: 20px;
+    padding-top: 2rem;
+    margin: 0 2vw;
 }
 
-#servicios>article>div>img{
-    width: 86vw;
-}
 
-#servicios>img{
-    width: 86vw;
-}
-
-#servicios>article>h2{
-    padding-top: 3rem;
-    padding-bottom: 1rem;
-}
-
-#servicios>article>p{
-    
-    width: 18rem;
-    padding-bottom: 3rem;
-      
-}
 
 #atencion-al-cliente{
     display: flex;
@@ -298,8 +292,8 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
+    width: 0.5rem;
+    height: 0.5rem;
     background-color: #25d366;
     color: white;
     border-radius: 50%;
@@ -307,6 +301,10 @@ footer{
     text-decoration: none;
     transition: background-color 0.3s, opacity 0.3s;
     opacity: 0.7;
+}
+
+.whatsapp-icon{
+    width: 5rem;
 }
 
 .whatsapp-button:hover {
@@ -351,15 +349,18 @@ footer{
     #acerca-de-nosotros{
         display: flex;
         justify-content: space-around;
-        padding: 10rem 4rem;
-        
+        padding: 10vw 0 27vw 0;
+        text-align: center;    
+          
     }
 
-    #acerca-de-nosotros>.datos>img{
-        width: 3rem;
-        left: 1vw ;
+    #servicios{
+        display: flex;
+        justify-content: space-around;
+        padding: 10vw 0 27vw 0;
+        text-align: center;    
+          
     }
-
     
     .futer p{
         flex-direction: column;
