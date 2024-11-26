@@ -109,7 +109,7 @@ nav>div>img:hover{
 #inicio>div>h1{
     width: 94vw;
     padding: 9rem 2rem;
-    font-size: 10rem;
+    font-size: 15rem;
     font-family: 'Poppins', sans-serif;
     color: var(--Light-Pink);
 }
@@ -337,6 +337,12 @@ footer{
 
     input#menu~ul>li{
         padding: 0.5rem;
+    }
+
+    #inicio>div>h1{
+        width: 94vw;
+        padding: 9rem 2rem;
+        font-size: 10rem;
     }
 
     #informacion-principal>h1{
