@@ -34,7 +34,7 @@ body{
 nav{
     position: fixed;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: var(--padding); 
     background-color: black;
@@ -49,24 +49,29 @@ a:link, a:visited, a:active {
 
 input#menu{
     visibility: hidden;
-    position: relative;
+    position: fixed;
 }
 
 input#menu~ul{
-    background-color: var(--sub-color);
+    background-color: black;
     width: 100%;
     list-style: none;
-    height: 58%;
+    height: 120vw;
     position: absolute;
     right: 100%;
     transition: all 300ms linear;
     opacity: 0.8;
+    margin-top: 6vw;
+    padding-top: 5vw;
 }
 
 input#menu:checked~ul{
     right: 0;
 }
 
+.img-menu{
+   margin-right: 10vw;
+}
 
 nav>div>div{
     position: absolute;
@@ -88,7 +93,7 @@ ul{
 
 nav>div>a>img{
     position: relative;
-    width: 12rem;
+    width: 6rem;
 }
 
 nav>div>img:hover{
@@ -100,7 +105,7 @@ nav>div>img:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3.5rem 2rem;
+    padding: 3.5vw 2vw 20vw 0;
     text-align: center;
     background-image: url("../assets/images/imagen-inicio.jpeg");
     border-radius: 3%;
@@ -109,7 +114,7 @@ nav>div>img:hover{
 
 #inicio>div>h1{
     width: 94vw;
-    padding: 4rem 2rem;
+    padding: 9rem 2rem 4rem 2rem;
     font-size: 8rem;
     font-family: 'Poppins', sans-serif;
     color: var(--Light-Pink);
@@ -152,6 +157,7 @@ nav>div>img:hover{
     margin-top: 0.5vw;
     justify-content: center;
     align-content: center;
+    padding: 25vw 0;
 }
 
 #acerca-de-nosotros>.datos{
@@ -178,6 +184,7 @@ nav>div>img:hover{
     margin-top: 0.5vw;
     justify-content: center;
     align-content: center;
+    padding: 25vw 0;
 }
 
 #servicios>.datos{
@@ -210,9 +217,12 @@ nav>div>img:hover{
     padding: 2rem 2rem 11rem 2rem;
     text-align: center;
     background-image: url("../assets/images/imagen-atencion.jpeg");
+    object-fit: contain;
     border-radius: 3%;
     width: 100%;
     color: black;
+    padding: 20vw 0;
+    
 }
 
 #atencion-al-cliente>div>h1{
@@ -297,8 +307,8 @@ footer{
 
   .whatsapp-button {
     position: fixed;
-    bottom: 80px;
-    right: 90px;
+    bottom: 5em;
+    right: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -324,6 +334,10 @@ footer{
 
 @media only screen and (min-width:769px){
 
+    nav{
+        justify-content: center; 
+    }
+
     nav>div>label{
         display: none;
     }
@@ -334,10 +348,17 @@ footer{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        height: 0;
+        margin-top: 0;
+        padding-top: 0;
     }
 
     input#menu~ul>li{
         padding: 0.5rem;
+    }
+
+    #inicio{
+        padding: 3.5vw 2vw 9.5vw 0;
     }
 
     #inicio>div>h1{
@@ -367,8 +388,10 @@ footer{
         justify-content: space-around;
         padding: 10vw 0 27vw 0;
         text-align: center;    
+        margin-top: 0.5vw;
           
     }
+
 
     #servicios{
         display: flex;
@@ -386,5 +409,10 @@ footer{
     }
     .futer-2{
     display: inline-block;
+    }
+
+    .whatsapp-button {
+        bottom: 5em;
+        right: 7rem;
     }
 }
