@@ -35,7 +35,13 @@
 
   
   <section id="inicio" style="display: flex; align-items: center; justify-content: space-around;">
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="padding-top: 5.25rem;" id="inicio">
+
+    <div id="inicio" class="carousel slide" data-bs-ride="carousel" style="padding-top: 5.25rem;">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
       <div class="carousel-inner rounded-4">
         <div class="carousel-item active">
           <img src="./assets/images/inicio.jpeg" class="d-block w-100" alt="...">
@@ -44,15 +50,13 @@
           <img src="./assets/images/inicio1.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="./assets/images/inicio2.jpg" class="d-block w-100"alt="...">
+          <img src="./assets/images/inicio2.jpg" class="d-block w-100" alt="...">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
         <span class="visually-hidden">Next</span>
       </button>
     </div>
@@ -114,8 +118,7 @@
 
    <div id="servicios"><br></div> 
   <section  class="container-fluid border border-primary rounded-4" id="acerca-de-nosotros" style="--bs-border-opacity: .5; padding: 5vw 2vw; background-color: #F8F8F8; margin-top: 5vw;" >
-    
-    <div id="carouselExample" class="carousel slide">
+    <div id="carouselExample" class="carousel slide carousel-dark" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="d-flex justify-content-center">
@@ -172,9 +175,6 @@
     <div class="card bg-dark text-black text-center">
       <img class="card-img" src="assets/images/atencion-cliente.jpeg" alt="Card image"> 
       <div class="card-img-overlay d-flex align-items-center justify-content-center">
-        <div class="jumbotron">
-          <h1 class="display-4 fw-bold">ATENCIÓN AL CLIENTE</h1>
-          <h4 class="fw-bold">Si necesitas informacion general o <br> sobre tu factura comunicate con nosotros.</h4>
           <hr class="my-4">
           <p class="my-4">
             <a class="btn btn-dark btn-lg" href="https://wa.me/573044614193" target="_blank" role="button">HABLAR CON UN ASESOR</a>
